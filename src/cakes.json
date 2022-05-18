@@ -1,0 +1,34 @@
+[
+  {
+    "image": "https://www.crazyforcrust.com/wp-content/uploads/2020/09/yellow-cake-5-668x1002.jpg",
+    "choices": [0, 0, 0]
+  },
+  {
+    "image": "https://i.pinimg.com/564x/6e/23/4c/6e234c62ce2e5b687d1bdbad177c22a2.jpg",
+    "choices": [0, 0, 1]
+  },
+  {
+    "image": "https://thedomesticrebel.com/wp-content/uploads/2018/07/DSC_0903A.jpg",
+    "choices": [0, 1, 0]
+  },
+  {
+    "image": "https://driscolls.imgix.net/-/media/assets/recipes/chocolate-covered-banana-cake-with-strawberries-and-cream-cheese-frosting.ashx",
+    "choices": [0, 1, 1]
+  },
+  {
+    "image": "https://www.eatliverun.com/wp-content/uploads/2018/08/IMG_0263-500x500.jpg",
+    "choices": [1, 0, 0]
+  },
+  {
+    "image": "https://static.onecms.io/wp-content/uploads/sites/24/2020/02/01/chocolate_strawberrycake_032-s-2000.jpg",
+    "choices": [1, 0, 1]
+  },
+  {
+    "image": "https://www.barbarabakes.com/wp-content/uploads/2022/04/Black-Magic-Layer-Cake-Barbara-Bakes.jpg",
+    "choices": [1, 1, 0]
+  },
+  {
+    "image": "https://i0.wp.com/live.staticflickr.com/65535/50782712577_6fd355fabc_b.jpg?w=1140&ssl=1",
+    "choices": [1, 1, 1]
+  }
+]
