@@ -1,15 +1,41 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-image: url("https://i.pinimg.com/564x/cb/31/38/cb3138f6a2ca2cd54d9e87219d8a4a97.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: peachpuff;
+  opacity: 1;
+  font-size: 35px;
+}
+
+.startOver {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  padding: 0.5rem;
+  margin: 1rem;
 }
 
 img {
-  border-radius: 8px;
   width: 30%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: groove;
 }
 
-button {
+.cakeButtons {
   background-color: transparent;
   border: none;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+}
+
+p {
+  font-size: 35px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 750;
 }

@@ -1,11 +1,11 @@
 import "./styles.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "./data-file.json";
 import _ from "lodash";
 import cakes from "./cakes.json";
 
 function Question(props) {
-  return <div>{props.question}</div>;
+  return <p>{props.question}</p>;
 }
 
 function Answers(props) {
@@ -20,7 +20,7 @@ function Answers(props) {
   }
   return props.answers.map(function (pic, index) {
     return (
-      <button key={index}>
+      <button key={index} className="cakeButtons">
         <img
           id={index}
           src={pic}
@@ -36,21 +36,33 @@ function ResultPage(props) {
   const [finalCake, setFinalCake] = useState("");
   // 1. Iterate over cakes array
   // 2. Compare if current cake choices arr == resultCake
-  for (let i = 0; i < cakes.length; i++) {
-    if (_.isEqual(props.resultCake, cakes[i].choices)) {
-      console.log(cakes[i].image);
-      // 3. If equal, add image url to a state var
-      setFinalCake(cakes[i].image);
-      console.log("here");
+  useEffect(() => {
+    for (let i = 0; i < cakes.length; i++) {
+      if (_.isEqual(props.resultCake, cakes[i].choices)) {
+        // 3. If equal, add image url to a state var
+        setFinalCake(cakes[i].image);
+      }
     }
+  }, [props.resultCake, props.finalCake]);
+
+  function handleStartOver() {
+    props.setCurrentQuestion(0);
+    props.setResultCake([]);
   }
 
   // 4. Print image url src as the state var
-
   return (
     <div>
-      final cake
+      <h1>
+        <span role="img" aria-label="finalCake">
+          🎉 Final Cake 🎉
+        </span>
+      </h1>
       <img src={finalCake} alt="finalCake" />
+      <br />
+      <button className="startOver" onClick={handleStartOver}>
+        Start Over
+      </button>
     </div>
   );
 }
@@ -62,7 +74,11 @@ export default function App() {
     <div className="App">
       {currentQuestion < data.length ? (
         <div>
-          <h1>Welcome To Cake Maker</h1>
+          <h1>
+            <span role="img" aria-label="cake">
+              🎂 Welcome To Cake Maker 🎂
+            </span>
+          </h1>
           <Question question={data[currentQuestion].question.text} />
           <Answers
             answers={data[currentQuestion].question.choices}
@@ -72,7 +88,11 @@ export default function App() {
         </div>
       ) : (
         <div>
-          <ResultPage resultCake={resultCake} />
+          <ResultPage
+            resultCake={resultCake}
+            setResultCake={setResultCake}
+            setCurrentQuestion={setCurrentQuestion}
+          />
         </div>
       )}
     </div>
