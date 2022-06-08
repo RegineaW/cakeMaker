@@ -86,9 +86,9 @@ export default function App() {
             setCurrentQuestion={setCurrentQuestion}
             setResultCake={setResultCake}
           />
-          <img src=" catBaking.gif" class="bakingCat" />
-          <img src=" catBaking.gif" class="bakingCat2" />
-          <img src=" letsGo!.gif" class="letsGo" />
+          <img src=" catBaking.gif" class="bakingCat" alt="bakingCat" />
+          <img src=" catBaking.gif" class="bakingCat2" alt="bakingCat2" />
+          <img src=" letsGo!.gif" class="letsGo" alt="letsGo" />
         </div>
       ) : (
         <div class="resultPage">
@@ -98,7 +98,6 @@ export default function App() {
             setCurrentQuestion={setCurrentQuestion}
           />
           <img src="pusheen-yay.gif" class="yay" />
-          <img src="confetti.gif" class="confetti" />
         </div>
       )}
     </div>

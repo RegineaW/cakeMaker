@@ -70,7 +70,7 @@ p {
 }
 
 .resultPage {
-  background-image: url("resultBg.jpg");
+  background-image: url("https://acegif.com/wp-content/gif/confetti-40.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -86,13 +86,4 @@ p {
   position: absolute;
   top: 150px;
   right: 50px;
-}
-
-.confetti {
-  border-width: 0px;
-  width: 750px;
-  height: 750px;
-  position: absolute;
-  top: 10px;
-  right: 259px;
 }
