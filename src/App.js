@@ -41,6 +41,7 @@ function ResultPage(props) {
       if (_.isEqual(props.resultCake, cakes[i].choices)) {
         // 3. If equal, add image url to a state var
         setFinalCake(cakes[i].image);
+        console.log(props.resultCake);
       }
     }
   }, [props.resultCake, props.finalCake]);
@@ -85,14 +86,18 @@ export default function App() {
             setCurrentQuestion={setCurrentQuestion}
             setResultCake={setResultCake}
           />
+          <img src=" catBaking.gif" class="bakingCat" />
+          <img src=" catBaking.gif" class="bakingCat2" />
+          <img src=" letsGo!.gif" class="letsGo" />
         </div>
       ) : (
-        <div>
+        <div class="resultPage">
           <ResultPage
             resultCake={resultCake}
             setResultCake={setResultCake}
             setCurrentQuestion={setCurrentQuestion}
           />
+          <img src="pusheen-yay.gif" class="yay" />
         </div>
       )}
     </div>

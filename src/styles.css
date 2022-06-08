@@ -1,7 +1,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-image: url("https://i.pinimg.com/564x/cb/31/38/cb3138f6a2ca2cd54d9e87219d8a4a97.jpg");
+  background-image: url("https://st2.depositphotos.com/3470617/6425/v/380/depositphotos_64252373-stock-illustration-baking-kitchen-icons.jpg?forcejpeg=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -21,8 +21,10 @@
 }
 
 img {
-  width: 30%;
-  border-style: groove;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border: groove 10px brown;
 }
 
 .cakeButtons {
@@ -38,4 +40,49 @@ p {
   font-size: 35px;
   font-family: "Permanent Marker", cursive;
   font-weight: 750;
+}
+
+.bakingCat {
+  border-width: 0px;
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  top: 150px;
+  right: 50px;
+}
+.bakingCat2 {
+  border-width: 0px;
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.letsGo {
+  border-width: 0px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 75px;
+  left: 545px;
+}
+
+.resultPage {
+  background-image: url("resultBg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yay {
+  border-width: 0px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 150px;
+  right: 50px;
 }
