@@ -98,6 +98,7 @@ export default function App() {
             setCurrentQuestion={setCurrentQuestion}
           />
           <img src="pusheen-yay.gif" class="yay" />
+          <img src="confetti.gif" class="confetti" />
         </div>
       )}
     </div>
